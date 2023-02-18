@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patna Zoo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap">
+
+    <link rel="stylesheet" href="css/zoo.css">
+    <style>
+        /* CSS RESET  */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('images/elephant-111695.jpg');
+            color: rgb(0, 0, 0);
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            font-weight: bolder;
+        }
+
+        .left {
+            position: absolute;
+            left: 34px;
+            top: 18px;
+            /* border: 4px solid yellow; */
+            font-size: 41px;
+            color: rgb(8, 139, 8);
+            /* background-color: rgb(201, 172, 145); */
+        }
+
+        .left:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .mid {
+            display: block;
+            /* border: 4px solid yellow; */
+            width: 41%;
+            margin: 18px 452px;
+            /* background-color: rgb(201, 172, 145); */
+            /* text-align: center; */
+        }
+
+        .search {
+            position: absolute;
+            right: 34px;
+            top: 34px;
+            color: rgb(8, 139, 8);
+            cursor: pointer;
+        }
+
+        .search:hover {
+            color: rgb(5, 100, 5);
+        }
+
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: rgb(8, 139, 8);
+            text-decoration: none;
+            padding: 0px 13.6px;
+        }
+        
+        .navbar li a:hover,
+        .navbar li a:active {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .container {
+            border: 4px solid yellow;
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+        }
+        
+        .form-group input {
+            font-family: 'Baloo Bhai', cursive;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid rgb(255, 254, 254);
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+        
+        .container button {
+            display: block;
+            width: 102%;
+            margin: 31px auto;
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: 'Baloo Bhai', cursive;
+            color: rgb(8, 139, 8);
+        }
+        </style>
+</head>
+
+<body>
+    <header class="top">
+        <!-- LEFT box for logo -->
+        <div class="left">
+            <!-- <img src="images/logo-plate-pointer-zoo-animals-text-minimalist-style-cartoon-flat-raster-illustration-173795723.jpg" alt=""> -->
+            Patna Zoo
+        </div>
+
+        <!-- MID box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="ative">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Animals</a></li>
+                <li><a href="#">Plants</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+
+        <!-- RIGHT box for action -->
+        <div class="search">
+            <input type="text" name="Search" id="search" placeholder="Enter Your Search">&#128270
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>WELCOME TO ZOO</h1>
+        <form action="noaction.php"></form>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Email">
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
